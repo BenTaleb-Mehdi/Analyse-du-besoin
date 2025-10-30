@@ -1,57 +1,51 @@
-# 🧩 Problem Statement — Dashboard Admin (Portfolio)
+## Problem Statement
 
-## 👤 Persona concerné
-
-**Yassin**, 27 ans, développeur freelance à Tanger.  
-Il gère son site portfolio pour présenter ses projets, recevoir des messages et suivre son activité.
-
----
-
-## 💬 Problem Statement
-
-Pour **Yassin**, qui **perd du temps à modifier le contenu de son site et à consulter ses messages manuellement**,  
-nous voulons **créer un tableau de bord clair et dynamique**,  
-afin qu’il **puisse gérer facilement ses projets, voir les messages en temps réel et suivre l’activité de son site sans coder.**
+For Amal, a 28-year-old citizen engaged in local development,  
+who struggles to find clear, updated, and trustworthy information about rural solidarity initiatives in Tafilalet,  
+we want to create a digital platform that centralizes and promotes these initiatives,  
+so that she can discover, support, and track impactful local projects easily.
 
 ---
 
-## 💡 Hypothèse
+## Blog Administrator (Admin Persona)
 
-Si Yassin dispose d’un tableau de bord simple et bien organisé,  
-il sera **plus productif**, **réagira plus vite aux messages des clients**,  
-et **aura une meilleure gestion de son image professionnelle**.
+- **Age / Context:**  
+  30 years old, digital project manager or local communication coordinator. Oversees the blog **“Errachidia – Sahara Solidaire”** and ensures content, design, and visibility are consistent with the project’s mission. Works with contributors and manages technical aspects.  
 
----
+- **Main Goal:**  
+  Maintain an active and credible online platform that promotes solidarity initiatives and supports young local creators.  
 
-## 🛠️ Solutions proposées
+- **Key Needs:**  
+  - Access a secure admin dashboard to manage posts, authors, and categories.  
+  - Approve, edit, or delete articles submitted by contributors.  
+  - Monitor statistics (visits, engagement, and most-read articles).  
+  - Receive and manage messages or collaboration requests directly from the dashboard.  
+  - Update media (photos, videos, reports) and organize them efficiently.  
 
-1. Interface d’administration moderne et minimaliste.
-2. Notifications dynamiques des nouveaux messages (sans rechargement).
-3. Section “Statistiques” affichant le nombre de projets, de messages et de visiteurs.
-4. Outil d’édition rapide pour mettre à jour les projets et informations du portfolio.
+- **Frustrations:**  
+  - Manual or complicated update processes.  
+  - Lack of real-time feedback and visitor analytics.  
+  - Difficulty coordinating with contributors due to limited communication tools.  
 
----
-
-## 📏 Critères de succès
-
-- Yassin peut **modifier un projet ou une section du site en moins d’une minute**.
-- Les **nouveaux messages s’affichent automatiquement** sans rechargement.
-- Il **consulte les statistiques du site en un seul clic**.
-- Son **temps de gestion du site diminue d’au moins 50 %** par rapport à avant.
-
----
-
-## 🎯 Objectif du MVP
-
-Mettre en place un **dashboard simple, rapide et réactif** avec les fonctions essentielles :
-
-- gestion des projets,
-- affichage dynamique des messages,
-- compteur de statistiques globales.
+- **Environment:**  
+  Uses a computer (Mac/Windows) for admin tasks, with stable Wi-Fi or 4G connection. Works remotely or from the Errachidia communication center.  
 
 ---
 
-## ✅ Résumé
+## Proposed MVP Solution (3 Simple Ideas)
 
-Le problème principal de Yassin est le **manque de simplicité et de rapidité** dans la gestion de son portfolio.  
-La solution proposée vise à lui offrir un **outil fluide et intuitif** pour gagner du temps et rester concentré sur ses projets.
+1. **Interactive Map & Directory:**  
+   A simple map and directory displaying all ongoing rural and solidarity projects in Tafilalet.  
+
+2. **Community Participation Tools:**  
+   Citizens can join initiatives as volunteers, donate, or share them on social media.  
+
+3. **Impact Tracking Dashboard:**  
+   Updates and statistics showing project progress and community impact.  
+
+
+## Success Metrics
+
+- At least 10 local projects registered on the platform within 3 months.  
+- 50% of users engage (volunteer, donate, or share) with at least one project.  
+- Positive feedback from associations reporting increased participation or visibility.  

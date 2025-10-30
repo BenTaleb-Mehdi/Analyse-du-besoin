@@ -1,52 +1,34 @@
-# 🧍 Persona Principal — Yassin, administrateur du site portfolio
+# Errachidia – Sahara Solidaire – Project Report
 
-## 👤 Profil utilisateur
-
-Yassin, 22 ans, développeur freelance basé à Tanger.  
-Il gère un site portfolio pour présenter ses projets, recevoir des messages de clients et suivre son activité.
+**Project Question:**  
+How can we connect and make visible the rural and solidarity initiatives of the Tafilalet region?
 
 ---
 
-## 🎯 Objectif principal
+## Personas for Errachidia – Sahara Solidaire
 
-Pouvoir modifier facilement le contenu de son site (projets, messages, statistiques) sans passer par le code.
-
----
-
-## 🔑 Besoins clés
-
-1. Interface claire et moderne pour gérer ses projets et messages.
-2. Notifications dynamiques (sans recharger la page).
-3. Statistiques simples (nombre de projets, messages, visiteurs).
-
----
-
-## 😤 Frustrations
-
-- Interfaces d’administration trop complexes ou chargées.
-- Obligation de recharger la page pour voir les nouveaux messages.
-- Manque de visibilité sur l’activité du site (aucun aperçu global).
+### Persona 1 – Amal, the Engaged Citizen (Primary Persona)
+- **Name:** Amal  
+- **Age / Context:** 28 years old, lives in Errachidia, university graduate interested in local development and solidarity actions. Uses her smartphone to discover and share initiatives and her laptop to research and participate in local projects.  
+- **Goal:** Discover and support rural and solidarity initiatives in the Tafilalet region, while following the tangible impact of these actions.  
+- **Needs:**
+  - Quick access to information about local solidarity projects.  
+  - The ability to easily participate (volunteering, donations, or sharing information).  
+  - Tools to track project progress and results.  
+  - Notifications about new initiatives or community events.  
+- **Frustration:** Difficulty finding reliable and centralized information, confusing navigation, and lack of transparency about project impact.  
+- **Environment:** Android smartphone and laptop; mobile connection sometimes limited, short sessions (5–15 minutes).  
 
 ---
 
-## 🌐 Environnement
-
-- Utilise un ordinateur portable ou un smartphone Android.
-- Connexion Wi-Fi ou 4G moyenne.
-- Travaille sur son dashboard pendant ses pauses ou le soir.
-
----
-
-## 🚀 MVP — Minimum Viable Product
-
-Créer une version minimale du dashboard qui permet à Yassin de :
-
-- 🔧 Ajouter, modifier et supprimer des projets.
-- 💬 Consulter les messages reçus en temps réel.
-- 📊 Afficher un résumé clair (nombre de projets, messages, visiteurs).
-
----
-
-## 💡 Conclusion
-
-Ce persona guide la conception d’un **dashboard simple, moderne et rapide**, centré sur la gestion efficace du contenu sans compétences techniques.
+### Persona 2 – Youssef, the Local Project Initiator
+- **Name:** Youssef  
+- **Age / Context:** 32 years old, manager of a rural association in Tafilalet. Uses his smartphone to communicate with volunteers and villagers, and his laptop to handle administration, funding, and project reports.  
+- **Goal:** Promote his initiative, mobilize the community, and gain resources or support to sustain local solidarity projects.  
+- **Needs:**
+  - A clear presentation of projects and objectives to attract supporters.  
+  - Easy registration and participation for citizens.  
+  - Tools to publish project updates and impact reports.  
+  - Simple collaboration tools with other local actors.  
+- **Frustration:** Low visibility for his initiatives, difficulty mobilizing citizens or finding trustworthy funding sources.  
+- **Environment:** Smartphone for communication; laptop for management; Wi-Fi at home or unstable mobile network in rural areas.  
