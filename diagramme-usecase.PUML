@@ -27,12 +27,12 @@ package "Errachidia – Sahara Solidaire Platform" {
 ' Relationships
 ' -------------------------
 
-Visitor --> UC_View
-Initiator --> UC_Publish
-Registered --> UC_Comment
-Registered --> UC_Search
-Citizen --> UC_Participate
-Citizen --> UC_Search
+Visitor -- UC_View
+Initiator -- UC_Publish
+Registered -- UC_Comment
+Registered -- UC_Search
+Citizen -- UC_Participate
+Citizen -- UC_Search
 
 ' Include / Extend relationships
 UC_Participate .> UC_View : <<include>>
