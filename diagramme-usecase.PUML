@@ -3,24 +3,28 @@
 left to right direction
 skinparam packageStyle rectangle
 skinparam usecase {
-  BackgroundColor White
-  BorderColor Black
+BackgroundColor White
+BorderColor Black
 }
 
 actor "Visitor\n(Guest)" as Visitor
 actor "Initiator\n(Youssef / Association)" as Initiator
 actor "Registered User\n(Amal)" as Registered
-actor "Citizen\n(Volunteer / Donor)" as Citizen
+actor "Admin\n(Platform Administrator)" as Admin
 
 package "Errachidia – Sahara Solidaire Platform" {
-  
-  ' Use Cases
-  usecase "View Projects" as UC_View
-  usecase "Publish Update / Article" as UC_Publish
-  usecase "Comment / Like / Share" as UC_Comment
-  usecase "Donate / Volunteer" as UC_Participate
-  usecase "Search / Filter by Category" as UC_Search
 
+' Existing Use Cases
+usecase "View Articles" as UC_View
+usecase "Publish Update / Article" as UC_Publish
+usecase "Comment / Like / Share" as UC_Comment
+usecase "Search / Filter by Category" as UC_Search
+usecase "Manage Content / Moderate" as UC_Admin
+
+' New Use Cases
+usecase "Accueil (Liste)\nUC1" as UC1
+usecase "Détail article\nUC2" as UC2
+usecase "Favoris\nUC3" as UC3
 }
 
 ' -------------------------
@@ -28,15 +32,27 @@ package "Errachidia – Sahara Solidaire Platform" {
 ' -------------------------
 
 Visitor -- UC_View
+Visitor -- UC1
+Visitor -- UC2
+
 Initiator -- UC_Publish
 Registered -- UC_Comment
 Registered -- UC_Search
-Citizen -- UC_Participate
-Citizen -- UC_Search
+Registered -- UC3
+Registered -- UC1
+Registered -- UC2
+Admin -- UC_Publish
+Admin -- UC_Admin
+Admin -- UC_Comment
+Admin -- UC1
+Admin -- UC2
+Admin -- UC3
 
 ' Include / Extend relationships
-UC_Participate .> UC_View : <<include>>
 UC_Comment .> UC_View : <<include>>
 UC_Search .> UC_View : <<include>>
+UC1 .> UC_View : <<include>>
+UC2 .> UC_View : <<include>>
+UC3 .> UC_View : <<include>>
 
 @enduml
