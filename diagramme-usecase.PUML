@@ -1,58 +1,37 @@
 @startuml
-
 left to right direction
 skinparam packageStyle rectangle
 skinparam usecase {
-BackgroundColor White
-BorderColor Black
+  BackgroundColor White
+  BorderColor Black
 }
 
-actor "Visitor\n(Guest)" as Visitor
-actor "Initiator\n(Youssef / Association)" as Initiator
-actor "Registered User\n(Amal)" as Registered
-actor "Admin\n(Platform Administrator)" as Admin
+actor "Visitor" as V
+actor "Initiator (Youssef)" as I
+actor "Registered User (Amal)" as R
+actor "Admin" as A
 
-package "Errachidia – Sahara Solidaire Platform" {
+package "Errachidia – Sahara Solidaire" {
 
-' Existing Use Cases
-usecase "View Articles" as UC_View
-usecase "Publish Update / Article" as UC_Publish
-usecase "Comment / Like / Share" as UC_Comment
-usecase "Search / Filter by Category" as UC_Search
-usecase "Manage Content / Moderate" as UC_Admin
-
-' New Use Cases
-usecase "Accueil (Liste)\nUC1" as UC1
-usecase "Détail article\nUC2" as UC2
-usecase "Favoris\nUC3" as UC3
+  usecase "Consulter Contenu\n(Articles, Détails, Favoris)" as UC_Public
+  usecase "Publier / Mettre à jour Article" as UC_Publish
+  usecase "Commenter / Aimer / Partager" as UC_Comment
+  usecase "Rechercher / Filtrer" as UC_Search
+  usecase "Gérer et Modérer Contenu" as UC_Admin
 }
 
-' -------------------------
-' Relationships
-' -------------------------
+' Relations simplifiées
+V -- UC_Public
+I -- UC_Publish
+R -- UC_Public
+R -- UC_Comment
+R -- UC_Search
+A -- UC_Publish
+A -- UC_Comment
+A -- UC_Admin
+A -- UC_Public
 
-Visitor -- UC_View
-Visitor -- UC1
-Visitor -- UC2
-
-Initiator -- UC_Publish
-Registered -- UC_Comment
-Registered -- UC_Search
-Registered -- UC3
-Registered -- UC1
-Registered -- UC2
-Admin -- UC_Publish
-Admin -- UC_Admin
-Admin -- UC_Comment
-Admin -- UC1
-Admin -- UC2
-Admin -- UC3
-
-' Include / Extend relationships
-UC_Comment .> UC_View : <<include>>
-UC_Search .> UC_View : <<include>>
-UC1 .> UC_View : <<include>>
-UC2 .> UC_View : <<include>>
-UC3 .> UC_View : <<include>>
-
+' Relations logiques
+UC_Comment .> UC_Public : <<include>>
+UC_Search .> UC_Public : <<include>>
 @enduml
